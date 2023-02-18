@@ -17,31 +17,35 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		
+		<!--  Spring MVC를 사용한 RESTful 서비스를 개발 라이브러리 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
-		
+		<!-- Junit, Hamcrest, Mockito를 포함하는 스프링 어플리케이션 테스트 라이브러리 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+		<!-- getter, setter, toString 등의 메서드 작성 코드를 줄여주는 코드 다이어트 라이브러리 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<!-- 스프링 부트의 내장 톰캣이 JSP를 지원하도록 해주는 의존성 라이브러리 -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
-		
+		<!-- JSTL 의존성 라이브러리 -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
