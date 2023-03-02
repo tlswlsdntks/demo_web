@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 @Controller
 public class MainController {
 
-	@GetMapping("/")
+	@GetMapping("/main")
 	public String loadMain(HttpServletRequest request) {
 		System.out.println(request.getRequestURI());
 		return "main";
